@@ -1,6 +1,6 @@
 {
   "name": "html-post-constructor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "repository": {
@@ -16,30 +16,32 @@
   "peerDependencies": {
     "codemirror": "^5.33.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-codemirror2": "^4.0.0",
+    "react-contenteditable": "^2.0.5",
+    "react-dom": "^16.2.0",
+    "react-dropzone": "^4.2.7"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "prepublish": "npm run build"
+    "build": "npm version patch --force && webpack --mode production"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "codemirror": "^5.33.0",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "mini-css-extract-plugin": "^0.4.0",
     "react": "^16.2.0",
+    "react-codemirror2": "^4.0.0",
+    "react-contenteditable": "^2.0.5",
     "react-dom": "^16.2.0",
+    "react-dropzone": "^4.2.7",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.12.0",
+    "webpack-auto-inject-version": "^1.1.0",
     "webpack-cli": "^3.0.8"
-  },
-  "dependencies": {
-    "react-codemirror2": "^4.0.0",
-    "react-contenteditable": "^2.0.5",
-    "react-dropzone": "^4.2.7"
   }
 }
