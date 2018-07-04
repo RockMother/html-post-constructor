@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RockMother/html-post-constructor.git"
@@ -22,7 +19,8 @@
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
