@@ -1,0 +1,38 @@
+.text {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    line-height: 24px;
+    /*background-color: rgba(91, 211, 177, 0.1);*/
+}
+
+[contenteditable]:focus {
+    outline: 0 solid transparent;
+}
+
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+}
+
+/*For image upload message*/
+.fill {
+    /*margin: 10px;*/
+    box-sizing: border-box;
+
+    border: 1px dashed lightgray;
+    color: lightgray;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border 1s, color 1s;
+}
+
+.fill:hover {
+    border: 1px dashed black;
+    color: black;
+}
