@@ -1,7 +1,7 @@
-import BlockBasedPost from './components/blockBasedPosts/blockBasedList';
+import BlockBasedList from './components/blockBasedPosts/blockBasedList';
 import BlockContainer from './components/block/BlockContainer';
 
 module.exports = {
-    BlockBasedPost,
+    BlockBasedList,
     BlockContainer
 };
