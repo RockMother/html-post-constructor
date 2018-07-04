@@ -1,6 +1,6 @@
 {
   "name": "html-post-constructor",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "dist/index.js",
   "repository": {
@@ -22,7 +22,7 @@
     "react-dropzone": "^4.2.7"
   },
   "scripts": {
-    "build": "npm version patch --force && webpack --mode production"
+    "build": "webpack --mode production && npm version patch --force"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
