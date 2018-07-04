@@ -85,6 +85,7 @@ class BlockContainer extends Component {
                 }
                 {
                     isEdit && showTemplateSelector && <TemplateSelector
+                        templates={this.props.templates}
                         selectedTemplate={this.state.template}
                         onTemplateSelected={this.onTemplateSelected} />
                 }

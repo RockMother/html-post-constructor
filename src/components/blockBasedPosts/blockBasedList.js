@@ -34,6 +34,7 @@ export default class BlockBasedList extends Component {
                     <BlockContainer key="new"
                         model={this.convertToBlockModel(newEntity)}
                         saveClicked={this.saveClicked.bind(this, newEntity)}
+                        templates={this.props.templates}
                         template={this.props.newEntityTemplate}
                         hideDeleteButton={true} />
                 }
@@ -41,6 +42,7 @@ export default class BlockBasedList extends Component {
                     this.props.data.length > 0 && this.props.data.map(entity => <BlockContainer key={entity._id}
                         model={this.convertToBlockModel(entity)}
                         template={entity.template}
+                        templates={this.props.templates}
                         deleteClicked={this.deleteClicked.bind(this, entity._id)}
                         saveClicked={this.saveClicked.bind(this, entity)}
                     />)
