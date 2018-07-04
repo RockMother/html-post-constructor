@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
+import './Image.css'
 
 export default ({ onImageAdded, onImageDeleted, isEdit, image }) => {
     const onImageDeletedHandler = (event) => {
